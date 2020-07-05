@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded_button">
+
+    <TextView
+        android:id="@+id/byCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Country:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/byCountryNewConfirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Confirmed:"
+        app:layout_constraintBottom_toTopOf="@+id/byCountryTotalConfirmed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/byCountryName"
+        />
+
+    <TextView
+        android:id="@+id/byCountryTotalConfirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Confirmed:"
+        app:layout_constraintBottom_toTopOf="@+id/byCountryNewDeaths"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/byCountryNewConfirmed"
+        />
+
+    <TextView
+        android:id="@+id/byCountryTotalDeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TotalDeaths:"
+        app:layout_constraintBottom_toTopOf="@+id/byCountryNewRecovered"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/byCountryNewDeaths"
+        />
+
+    <TextView
+        android:id="@+id/byCountryNewRecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Recovered:"
+        app:layout_constraintBottom_toTopOf="@+id/byCountryTotalRecovered"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/byCountryTotalDeaths"
+        />
+
+    <TextView
+        android:id="@+id/byCountryNewDeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Deaths:"
+        app:layout_constraintBottom_toTopOf="@+id/byCountryTotalDeaths"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/byCountryTotalConfirmed"
+        />
+
+    <TextView
+        android:id="@+id/byCountryTotalRecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Recovered:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/byCountryNewRecovered"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
